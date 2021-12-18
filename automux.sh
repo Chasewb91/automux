@@ -20,5 +20,5 @@ tmux new-window -t $session:2 -n "koalapi" #new window named 'koalapi'
 tmux send-keys -t 'koalapi' 'koala' C-m
     # 'koala' is an alais for a script that connects me to my local pi via ssh
 
-twmux attach-session -t $session:0 #attaches to the session at window 0
+tmux attach-session -t $session:0 #attaches to the session at window 0
  
