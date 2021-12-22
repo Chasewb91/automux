@@ -17,10 +17,13 @@ tmux new-window -t $session:1 -n "server9000" #new window named 'server9000'
 
 tmux send-keys -t 'server9000' "oper" C-m #Sends the command 'oper' to above window
     # 'oper' is an alias for a script that connects me to my local server via ssh
+tmux send-keys -t 'server9000' "neofetch" C-m
 
-tmux new-window -t $session:2 -n "vim" 
+tmux new-window -t $session:2 -n "koala" 
 
-tmux send-keys -t 'vim' 'vim' C-m
+tmux send-keys -t 'koala' 'koala' C-m
+
+tmux send-keys -t 'koala' 'neofetch' C-m
 
 tmux attach-session -t 'stack':0 #attaches to the session at window 0
  
